@@ -6,7 +6,8 @@ import os
 import joblib
 
 #  Load the trained model here
-model = joblib.load("model.pkl")
+st.write("Input to model:", input_df)
+
 
 
 
