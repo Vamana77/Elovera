@@ -17,8 +17,8 @@ st.title("ElevoraIQ - Professional Aptitude & Compensation Intelligence Framewor
 
 # Load the model using a safe relative path
 model_path = os.path.join(os.path.dirname(__file__), "model.pkl")
-with open(model_path, "rb") as file:
-    model = pickle.load(file)
+model = joblib.load(model_path)
+
 
 # Streamlit UI
 st.header("Candidate Profile")
